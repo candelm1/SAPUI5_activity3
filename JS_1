@@ -15,6 +15,7 @@ function convNumberToWords(number) {
     word += ones[hundred] + " hundred ";
     number %= 100;
   }
+
   // Handle the tens and ones
   if (number >= 20) {
     let ten = Math.floor(number / 10);
@@ -32,4 +33,5 @@ function convNumberToWords(number) {
   return word;
 }
 
+// Display Output - sample input is 789
 console.log(convNumberToWords(789));
