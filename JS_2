@@ -8,14 +8,14 @@ while (i < height) {
 
     // for adding leading spaces
     while (j < i) {
-        spaces += ' '; //addition of space
+        spaces += '  '; //addition of space-double space
         j++;
     }
 
     // for adding stars
     j = 0;
     while (j < height - i) {
-        stars += '*'; //addition of star
+        stars += '* '; //addition of star-with space since it is a double space
         j++;
     }
 
