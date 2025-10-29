@@ -1,0 +1,23 @@
+const color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+const o = ["th", "st", "nd", "rd"];
+
+for (let i = 0; i < color.length; i++) {
+  let suffix;
+  var num = i + 1;
+  switch (num) {
+    case 1:
+      suffix = o[1]; // "st"
+      break;
+    case 2:
+      suffix = o[2]; // "nd"
+      break;
+    case 3:
+      suffix = o[3]; // "rd"
+      break;
+    default:
+      suffix = o[0]; // "th"
+  } //end of Switch
+  
+  //display result
+  console.log(num + suffix + " choice is " + color[i] );
+} //end of for
