@@ -1,0 +1,13 @@
+var height = 5;
+
+for (var i = 0; i < height; i++) {
+    let line = '';
+    for (var j = 0; j < height; j++) {
+        if (j === i || j === height - 1 - i) {
+            line += '*'; //addition of star
+        } else {
+            line += ' '; //addition of space
+        }
+    }
+    console.log(line);
+}
