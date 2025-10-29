@@ -12,7 +12,7 @@ function convNumberToWords(number) {
   // Handle the hundreds
   if (number >= 100) {
     let hundred = Math.floor(number / 100);
-    word += ones[hundred] + " hundred ";
+    word += ones[hundred] + " Hundred ";
     number %= 100;
   }
 
