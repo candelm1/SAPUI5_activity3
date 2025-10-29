@@ -1,0 +1,40 @@
+var record = [{
+  "Name": "Gibo",
+  "Age": 16,
+  "SkillSet": [{
+    "Skill": "SAP UI5"
+  }, {
+    "Skill": "SAP HANA"
+  }]
+}, {
+  "Name": "Patrick",
+  "Age": 22,
+  "SkillSet": [{
+    "Skill": "SAP UI5"
+  }, {
+    "Skill": "SAP HANA"
+  }, {
+    "Skill": "SAP ABAP"
+  }]
+}, {
+  "Name": "MJ",
+  "Age": 24,
+  "SkillSet": [{
+    "Skill": "SAP HANA"
+  }]
+}];
+
+var maxSkills = 0; //flag for determining the highest
+var person = null; //
+
+for (var i = 0; i < record.length; i++) {
+  var skills = record[i].SkillSet.length;
+  if (skills > maxSkills) { //determination of highest
+    maxSkills = skills; //updated after determining it is the highest
+    person = record[i]; //the person who has the highest
+  }
+}
+
+// display result
+console.log("Name: " + person.Name);
+console.log("Age: " + person.Age);
