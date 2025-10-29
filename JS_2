@@ -1,0 +1,24 @@
+var height = 5;
+var i = 0;
+
+while (i < height) {
+    let spaces = '';
+    let stars = '';
+    let j = 0;
+
+    // for adding leading spaces
+    while (j < i) {
+        spaces += ' '; //addition of space
+        j++;
+    }
+
+    // for adding stars
+    j = 0;
+    while (j < height - i) {
+        stars += '*'; //addition of star
+        j++;
+    }
+
+    console.log(spaces + stars);
+    i++;
+}
