@@ -1,0 +1,7 @@
+function calcTriPerimeter(x, y, z) {
+  let perimeter = x + y + z; //calculation
+  return perimeter;
+}
+
+// display output
+console.log(calcTriPerimeter(2, 3, 5));
